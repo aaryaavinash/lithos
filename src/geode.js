@@ -1,11 +1,11 @@
 // The closed geode: two copies of the cut half, the top one mirrored across the measured cut plane so the rims
 // meet exactly. Hold to crack (violet seam glow, falling grit, tremble), release the stone at 100%.
-import { THREE, clamp, lerp, smooth } from '../../src/core/engine.js';
-import { firstMesh } from '../../src/core/assets.js';
-import { gsap } from '../../src/core/scroll.js';
+import { THREE, clamp, lerp, smooth } from './core/engine.js';
+import { firstMesh } from './core/assets.js';
+import { gsap } from './core/scroll.js';
 import { patchGeode } from './materials.js';
 
-// Cut plane of models/lithos/geode.glb, measured once offline (max-coplanar-vertex search): unit normal, offset along it, rim centroid.
+// Cut plane of models/geode.glb, measured once offline (max-coplanar-vertex search): unit normal, offset along it, rim centroid.
 const PLANE_N = new THREE.Vector3(-0.01168, 0.74314, 0.66903).normalize();
 const PLANE_D = 0.2214;
 const RIM_C = new THREE.Vector3(0.00324, 0.59829, -0.34094);

@@ -1,8 +1,8 @@
-# 14 · Lithos — "Crack the stone open"
+# Lithos — "Crack the stone open"
 Brand: **Lithos** — a gallery of museum-grade mineral specimens and a fine-jewellery line cut from them.
 
 ## Signature interaction
-**Crack the geode.** A closed rough geode sits on black velvet: build it from two copies of `models/lithos/geode.glb` (a cut
+**Crack the geode.** A closed rough geode sits on black velvet: build it from two copies of `models/geode.glb` (a cut
 half, cavity facing up) — the top one mirrored/flipped so the cut faces meet. Press-and-hold: hairline cracks glow violet along
 the seam (shader + falling dust particles), the stone trembles, then splits: the top half lifts and turns away revealing the
 amethyst cavity sparkling (glint shader: high-frequency noise × specular × view dependence → twinkling facets; bloom).

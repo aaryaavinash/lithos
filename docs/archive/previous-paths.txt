@@ -1,0 +1,32 @@
+// ORIGINAL (preserved, not deleted — disabled by comment): previous nested paths
+// import { THREE, clamp, lerp, smooth } from '../../src/core/engine.js';
+// import { firstMesh } from '../../src/core/assets.js';
+// import { gsap } from '../../src/core/scroll.js';
+// // Cut plane of models/lithos/geode.glb, measured once offline (max-coplanar-vertex search): unit normal, offset along it, rim centroid.
+// import { Engine, THREE, normalize, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
+// import { Assets, firstMesh } from '../../src/core/assets.js';
+// import { Pointer } from '../../src/core/input.js';
+// import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+// import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
+// import { bakeTexture } from '../../src/core/textures.js';
+//   { key: 'geode', file: 'models/lithos/geode.glb', pos: V3(0, 0, 0) },
+//   { key: 'quartz', file: 'models/lithos/quartz.glb', pos: V3(3.3, 0, -0.35), size: 1.2, axis: 'y', yaw: -24 * D },
+//   { key: 'pyrite', file: 'models/lithos/pyrite.glb', pos: V3(6.5, 0, 0), size: 1.08, axis: 'max', yaw: 18 * D },
+//   { key: 'ammonite', file: 'models/lithos/ammonite.glb', pos: V3(9.7, 0, -0.25), size: 1.02, axis: 'y', yaw: -16 * D },
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('lithos', { theme: 'dark', corner: 'bl' });
+//           <div class="piece-img"><img src="/img/lithos/ring.webp" alt="Platinum signet ring set with a violet amethyst cabochon on black velvet" loading="lazy" width="800" height="1000"></div>
+//           <div class="piece-img"><img src="/img/lithos/pendant.webp" alt="Raw clear quartz point pendant capped in platinum on a fine chain" loading="lazy" width="800" height="1000"></div>
+//           <div class="piece-img"><img src="/img/lithos/studs.webp" alt="Pair of tiny pyrite cube stud earrings in platinum settings" loading="lazy" width="800" height="1000"></div>
+//           <figure class="prov-photo"><img src="/img/lithos/miner.webp" alt="A miner's hands holding a freshly opened amethyst geode in a basalt tunnel" loading="lazy" width="1600" height="900"><figcaption class="cz">Artigas, Uruguay — the Pereira family mine, level 3</figcaption></figure>
+// import { THREE } from '../../src/core/engine.js';
+//   <link rel="stylesheet" href="./examples/lithos/style.css">
+//   <script type="module" src="./examples/lithos/main.js"></script>
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from './core/ui.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('lithos', { theme: 'dark', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): old root HTML image paths
+//           <div class="piece-img"><img src="/img/lithos/ring.webp" alt="Platinum signet ring set with a violet amethyst cabochon on black velvet" loading="lazy" width="800" height="1000"></div>
+//           <div class="piece-img"><img src="/img/lithos/pendant.webp" alt="Raw clear quartz point pendant capped in platinum on a fine chain" loading="lazy" width="800" height="1000"></div>
+//           <div class="piece-img"><img src="/img/lithos/studs.webp" alt="Pair of tiny pyrite cube stud earrings in platinum settings" loading="lazy" width="800" height="1000"></div>
+//           <figure class="prov-photo"><img src="/img/lithos/miner.webp" alt="A miner's hands holding a freshly opened amethyst geode in a basalt tunnel" loading="lazy" width="1600" height="900"><figcaption class="cz">Artigas, Uruguay — the Pereira family mine, level 3</figcaption></figure>

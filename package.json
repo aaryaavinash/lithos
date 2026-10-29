@@ -1,7 +1,7 @@
 {
   "name": "lithos",
   "private": true,
-  "description": "Standalone Lithos world from Dioramas.",
+  "description": "A mineral-gallery and fine-jewellery concept that treats every specimen as a geological record.",
   "license": "MIT",
   "version": "0.1.0",
   "type": "module",

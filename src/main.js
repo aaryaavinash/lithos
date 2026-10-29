@@ -1,12 +1,11 @@
 import './tailwind.css';
-import { Engine, THREE, normalize, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
-import { Assets, firstMesh } from '../../src/core/assets.js';
-import { Pointer } from '../../src/core/input.js';
-import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
-import { preloader, cursor, magnetic } from '../../src/core/ui.js';
-import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
-import { bakeTexture } from '../../src/core/textures.js';
+import { Engine, THREE, normalize, damp, clamp, smooth, lerp, studioEnvironment } from './core/engine.js';
+import { Assets, firstMesh } from './core/assets.js';
+import { Pointer } from './core/input.js';
+import { smoothScroll, gsap, reveal } from './core/scroll.js';
+import { preloader, cursor, magnetic } from './core/ui.js';
+import { VolumetricSpotEffect } from './core/volumetric.js';
+import { bakeTexture } from './core/textures.js';
 import { DepthOfFieldEffect } from 'postprocessing';
 import { velvetMaterial, crystalMaterial, patchPyrite, nacreMaterial } from './materials.js';
 import { Geode } from './geode.js';
@@ -126,10 +125,10 @@ scene.add(cove);
 
 // ─── Specimens ─────────────────────────────────────────────────────────────────
 const SPECS = [
-  { key: 'geode', file: 'models/lithos/geode.glb', pos: V3(0, 0, 0) },
-  { key: 'quartz', file: 'models/lithos/quartz.glb', pos: V3(3.3, 0, -0.35), size: 1.2, axis: 'y', yaw: -24 * D },
-  { key: 'pyrite', file: 'models/lithos/pyrite.glb', pos: V3(6.5, 0, 0), size: 1.08, axis: 'max', yaw: 18 * D },
-  { key: 'ammonite', file: 'models/lithos/ammonite.glb', pos: V3(9.7, 0, -0.25), size: 1.02, axis: 'y', yaw: -16 * D },
+  { key: 'geode', file: 'models/geode.glb', pos: V3(0, 0, 0) },
+  { key: 'quartz', file: 'models/quartz.glb', pos: V3(3.3, 0, -0.35), size: 1.2, axis: 'y', yaw: -24 * D },
+  { key: 'pyrite', file: 'models/pyrite.glb', pos: V3(6.5, 0, 0), size: 1.08, axis: 'max', yaw: 18 * D },
+  { key: 'ammonite', file: 'models/ammonite.glb', pos: V3(9.7, 0, -0.25), size: 1.02, axis: 'y', yaw: -16 * D },
 ];
 const FOCUS = [V3(0, 0.46, 0), V3(3.3, 0.55, -0.35), V3(6.5, 0.4, 0), V3(9.7, 0.5, -0.25), V3(4.85, 0.45, -0.15)];
 let geode = null;
@@ -476,7 +475,6 @@ engine.onTick((dt, t) => {
 });
 
 // ─── Boot ──────────────────────────────────────────────────────────────────────
-// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('lithos', { theme: 'dark', corner: 'bl' });
 const cur = cursor({ color: '#e9e2ff', blend: 'normal', size: 34 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.08 });

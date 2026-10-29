@@ -1,6 +1,6 @@
 // Lithos materials: velvet, amethyst glints + crack glow, rock crystal, mirror pyrite, thin-film ammonite.
 // All patches are onBeforeCompile injections on three's physical/standard shaders, so the Meshy PBR maps stay in charge.
-import { THREE } from '../../src/core/engine.js';
+import { THREE } from './core/engine.js';
 
 const HASH = /* glsl */`
   float lh13(vec3 p){ p = fract(p * 0.1031); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y) * p.z); }
