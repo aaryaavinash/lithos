@@ -1,8 +1,10 @@
+import './tailwind.css';
 import { Engine, THREE, normalize, damp, clamp, smooth, lerp, studioEnvironment } from '../../src/core/engine.js';
 import { Assets, firstMesh } from '../../src/core/assets.js';
 import { Pointer } from '../../src/core/input.js';
 import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+import { preloader, cursor, magnetic } from '../../src/core/ui.js';
 import { VolumetricSpotEffect } from '../../src/core/volumetric.js';
 import { bakeTexture } from '../../src/core/textures.js';
 import { DepthOfFieldEffect } from 'postprocessing';
@@ -474,7 +476,7 @@ engine.onTick((dt, t) => {
 });
 
 // ─── Boot ──────────────────────────────────────────────────────────────────────
-worldNav('lithos', { theme: 'dark', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('lithos', { theme: 'dark', corner: 'bl' });
 const cur = cursor({ color: '#e9e2ff', blend: 'normal', size: 34 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.08 });
